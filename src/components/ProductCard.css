@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.card {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 32px;
+  text-align: center;
+  transition: box-shadow 0.3s;
+  width: 304px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.add-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 237px;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.check-icon {
+  margin-right: 8px; 
+  font-size: 18px; 
+  color: #000000; 
+}
+
+.add-btn.added {
+  background-color: #A3F9B9; 
+  color: #1C1C1C;
+}
+.add-btn.add {
+  background-color: #40B25C; 
+}
+
+.add-btn.add:hover {
+  background-color: #1C6C3E; 
+}
+.wishlist-btn {
+  position: absolute;
+  top: 6%;
+  right: 7%;
+  padding: 4px;
+  background: none;
+  border: 1px;
+  cursor: pointer;
+  z-index: 10;
+}
+.wishlist-btn:hover{
+  color: #FEE5EC;
+  cursor: pointer;
+}
+.wishlist-btn img {
+  width: 30px; 
+  height: auto;
+}
+
+h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1C1C1C;
+    word-wrap: break-word; 
+    white-space: normal; 
+    text-align: left;
+    margin: 8px 0;
+}
+h2{
+  color:#B5B5B6;
+  font-family:'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.005em;
+  text-decoration: line-through;
+  display: flex;
+  margin: 4px 0;
+}
+h4{
+  color:#DA4B4F;
+  font-family:'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  display: flex;
+  margin: 4px 0;
+}
+h1{
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #B5B5B6;
+  margin: 8px 0;
+  text-align: left;
+}
+h1 span{
+  font-weight: 600;
+  color: #1C1C1C;
+
+}

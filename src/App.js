@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ProductCard from "./components/ProductCard";
+
+const products = [
+  {
+    id: 1,
+    name: "Monitor LED 27\" Gamer Curvo Samsung, 1920 x 1080, 240 Hz, HDMI, DP, Gsync Série CRG50",
+    originalPrice:2813.99,
+    discountedPrice: 2599.0,
+    installmentPrice:"",
+    image: "https://i.postimg.cc/g2HRC6HV/monitor.png",
+    added: false,
+    wishlist: false,
+  },
+  {
+    id: 2,
+    name: "Monitor LED 27\" Gamer Curvo Samsung, 1920 x 1080, 240 Hz, HDMI, DP, Gsync Série CRG50",
+    originalPrice:2813.99,
+    discountedPrice: 2599.0,
+    installmentPrice:"",
+    image: "https://i.postimg.cc/g2HRC6HV/monitor.png",
+    added: false,
+    wishlist: false,
+  },
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="product-list">
+        {products.map((product) => (
+          <ProductCard key={product.id} product={product} />
+        ))}
+      </div>
     </div>
   );
 }
